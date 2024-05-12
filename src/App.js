@@ -67,15 +67,7 @@ export default function App() {
 
     function handleZwischensumme() {
         return setZwischensumme(
-            (zweihundert +
-                einhundert +
-                fünfzig +
-                zwanzig +
-                zehn +
-                fünf +
-                zwei +
-                eins) /
-                100
+            (zweihundert + einhundert + fünfzig + zwanzig + zehn + fünf) / 100
         );
     }
 
