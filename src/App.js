@@ -17,7 +17,7 @@ export const initialCashSet = [
     { id: '0.01', value: 0.01, label: '1 Cent' },
     {
         id: 'schuldschein',
-        value: 'Wert dem Suldschein entnehmen',
+        value: 'Wert dem Schuldschein entnehmen',
         label: 'Schuldschein',
     },
 ];
@@ -74,23 +74,26 @@ export default function App() {
     }
 
     function handleResult() {
-        return setResult(
-            (zweihundert +
-                einhundert +
-                fünfzig +
-                zwanzig +
-                zehn +
-                fünf +
-                zwei +
-                eins +
-                fünfzigCent +
-                zwanzigCent +
-                zehnCent +
-                fünfCent +
-                zweiCent +
-                einCent +
-                schuldschein) /
-                100
+        return (
+            setResult(
+                (zweihundert +
+                    einhundert +
+                    fünfzig +
+                    zwanzig +
+                    zehn +
+                    fünf +
+                    zwei +
+                    eins +
+                    fünfzigCent +
+                    zwanzigCent +
+                    zehnCent +
+                    fünfCent +
+                    zweiCent +
+                    einCent +
+                    schuldschein) /
+                    100
+            ),
+            handleZwischensumme()
         );
     }
 
