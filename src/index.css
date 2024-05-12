@@ -1,10 +1,14 @@
+* {
+  font-size: 1.6rem;
+}
+
 body {
   background-color: #f7f7f9;
   margin: 0;
 }
 
 header {
-  padding: .5rem;
+  padding: 1rem !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,9 +17,17 @@ header {
   color: #fff;
   height: 2rem;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  gap: 2rem;
+}
+
+img {
+  margin-right: 1rem;
+}
+
+.header {
+  font-size: 0.8rem;
 }
 
 footer {
@@ -27,26 +39,25 @@ footer {
   color: #fff;
   height: 2rem;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-top: 11rem;
 }
 
 input {
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 .geld-in-der-kasse {
   display: flex;
   flex-direction: column;
-
 }
 
 .container {
   display: flex;
   gap: 1rem;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   justify-content: space-around;
-  width: 50%;
+  width: 75%;
   margin-inline: auto;
   height: 2rem;
   align-items: center;
@@ -74,7 +85,7 @@ input {
   padding: 1rem;
   background-color: #41b083;
   border: none;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   cursor: pointer;
   color: aliceblue;
   text-transform: uppercase;
