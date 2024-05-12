@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export const initialCashSet = [
   {id: '200', value: 200, label: "200€",},
