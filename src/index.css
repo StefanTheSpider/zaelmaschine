@@ -1,98 +1,103 @@
 * {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 body {
-  background-color: #f7f7f9;
-  margin: 0;
+    background-color: #f7f7f9;
+    margin: 0;
 }
 
 header {
-  padding: 1rem !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #272932;
-  width: 100%;
-  color: #fff;
-  height: 2rem;
-  text-align: center;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  gap: 2rem;
+    padding: 1rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272932;
+    width: 100%;
+    color: #fff;
+    height: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    gap: 2rem;
 }
 
 img {
-  margin-right: 1rem;
+    margin-right: 1rem;
 }
 
 .header {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #272932;
-  width: 100%;
-  color: #fff;
-  height: 2rem;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  margin-top: 11rem;
-  gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272932;
+    width: 100%;
+    color: #fff;
+    height: 2rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin-top: 11rem;
+    gap: 2rem;
 }
 
 .geld-in-der-kasse {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 0.2rem;
-  justify-content: space-around;
-  width: 100%;
-  margin-inline: auto;
-  height: 3rem;
-  align-items: center;
-  padding-left: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.2rem;
+    justify-content: space-around;
+    width: 100%;
+    margin-inline: auto;
+    height: 3rem;
+    align-items: center;
+    padding-left: 1rem;
 }
 
 input {
-  border-radius: 0.2rem;
-  text-align: center;
-  width: 5rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    width: 5rem;
+}
+
+hr {
+    border: 1px solid #272932;
+    width: 33%;
 }
 
 .scheine {
-  width: 12rem;
+    width: 12rem;
 }
 
 .container--new {
-  margin-top: 2rem;
-  justify-content: flex-start;
-  flex-direction: column;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .scheine--new {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .btn {
-  padding: 1rem;
-  background-color: #41b083;
-  border: none;
-  border-radius: 0.2rem;
-  cursor: pointer;
-  color: aliceblue;
-  text-transform: uppercase;
-  font-size: 1.6rem;
+    padding: 1rem;
+    background-color: #41b083;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 1.6rem;
 }
 
 .result {
-  justify-self: flex-end;
-  margin-bottom: 0;
+    justify-self: flex-end;
+    margin-bottom: 0;
 }
