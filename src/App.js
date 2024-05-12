@@ -293,7 +293,11 @@ function Header({ children }) {
 function Footer() {
   return (
     <footer>
-      <div>with ❤️‍🔥 by StefanTheSpider</div>
+      <div>with ❤️‍🔥 by StefanTheSpider for</div>
+      <img
+        src="https://tix-and-travel.com/cdn/shop/files/tix_travel_86ff656c-742e-4b91-92ba-f838a467c241_130x@2x.png?v=1667990920"
+        alt="logo"
+      />
     </footer>
   );
 }
