@@ -54,11 +54,24 @@ export default function App() {
     const einCent = count001 * 100;
     const schuldschein = countSchuldschein * 100;
     const [result, setResult] = useState('');
+    const [zwischensumme, setZwischensumme] = useState('');
     const [headerTxt] = useState(
         'Schön, dass du dich entschieden hast, die Zählmaschine von StefanTheSpider zu nutzen'
     );
 
-    console.log(schuldschein);
+    function handleZwischensumme() {
+        return setZwischensumme(
+            (zweihundert +
+                einhundert +
+                fünfzig +
+                zwanzig +
+                zehn +
+                fünf +
+                zwei +
+                eins) /
+                100
+        );
+    }
 
     function handleResult() {
         return setResult(
@@ -183,6 +196,21 @@ export default function App() {
                     <h3 className="scheine">
                         = {count1 === '' ? 0 : eins / 100}€
                     </h3>
+                </div>
+
+                <h2>
+                    {zwischensumme === ''
+                        ? 'Zwischensumme = 0€'
+                        : zwischensumme + '€'}
+                </h2>
+
+                <div className="container">
+                    <button
+                        onClick={() => handleZwischensumme()}
+                        className="btn"
+                    >
+                        Zwischensumme berechnen
+                    </button>
                 </div>
 
                 <div className="container">

@@ -67,6 +67,10 @@ input {
     width: 5rem;
 }
 
+h2 {
+    text-align: center;
+}
+
 hr {
     border: 1px solid #272932;
     width: 33%;
