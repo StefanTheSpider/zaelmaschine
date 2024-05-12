@@ -226,7 +226,7 @@ export default function App() {
 
 <div className="container container--new">
 
-<h1 className="result">Gesamtsumme: {result != '' ? result : 0} €</h1>
+<h1 className="result">Gesamtsumme: {result !== '' ? result : 0} €</h1>
 <button className="btn" type="submit" onClick={()=> handleResult()}>
         Gesammtsumme berechnen
       </button>
