@@ -105,3 +105,12 @@ hr {
     justify-self: flex-end;
     margin-bottom: 0;
 }
+
+@media (min-width: 768px) {
+    h3,
+    h2,
+    .container,
+    .btn {
+        font-size: 1rem;
+    }
+}
