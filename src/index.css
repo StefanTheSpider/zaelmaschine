@@ -1,13 +1,86 @@
 body {
+  background-color: #f7f7f9;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #272932;
+  width: 100%;
+  color: #fff;
+  height: 2rem;
+  text-align: center;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #272932;
+  width: 100%;
+  color: #fff;
+  height: 2rem;
+  text-align: center;
+  padding: .5rem;
+  margin-top: 11rem;
+}
+
+input {
+  border-radius: .2rem;
+}
+
+.geld-in-der-kasse {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: .2rem;
+  justify-content: space-around;
+  width: 50%;
+  margin-inline: auto;
+  height: 2rem;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+}
+
+.scheine {
+  width: 12rem;
+}
+
+.container--new {
+  margin-top: 2rem;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.scheine--new {
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: #41b083;
+  border: none;
+  border-radius: .2rem;
+  cursor: pointer;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.result {
+  justify-self: flex-end;
+  margin-bottom: 0;
 }
