@@ -213,9 +213,9 @@ export default function App() {
                     </button>
                 </div>
 
-                <div className="container">
+                <h2>
                     Werte der Münztafel entnehmen und in die Kästchen eintragen
-                </div>
+                </h2>
                 <hr />
 
                 <div className="container">
