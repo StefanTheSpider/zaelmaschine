@@ -22,6 +22,12 @@ export const initialCashSet = [
     },
 ];
 
+const day = new Date();
+
+const tag = day.getDate();
+const monat = day.getMonth() + 1; // Monat beginnt mit 0 (Januar)
+const jahr = day.getFullYear();
+
 export default function App() {
     const [count200, setCount200] = useState('');
     const [count100, setCount100] = useState('');
@@ -104,6 +110,8 @@ export default function App() {
                     ? headerTxt
                     : 'Der neue Bargeldbestand ist: ' + result + '€'}
             </Header>
+            <h2>{`Abrechnungstag ${tag}. ${monat}. ${jahr}`}</h2>
+
             <div className="geld-in-der-kasse">
                 <div className="container">
                     <h3 className="scheine">{initialCashSet[0].value}'er</h3>
