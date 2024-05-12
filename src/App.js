@@ -50,8 +50,8 @@ export default function App() {
     const zwanzig = count20 * (initialCashSet[3].value * 100);
     const zehn = count10 * (initialCashSet[4].value * 100);
     const fünf = count5 * (initialCashSet[5].value * 100);
-    const zwei = count2 * (initialCashSet[6].value * 100);
-    const eins = count1 * (initialCashSet[7].value * 100);
+    const zwei = count2 * 100;
+    const eins = count1 * 100;
     const fünfzigCent = count05 * 100;
     const zwanzigCent = count02 * 100;
     const zehnCent = count01 * 100;
@@ -185,6 +185,26 @@ export default function App() {
                     </h3>
                 </div>
 
+                <h2>
+                    {zwischensumme === ''
+                        ? 'Zwischensumme = 0€'
+                        : 'Zwischensumme ' + zwischensumme + '€'}
+                </h2>
+
+                <div className="container">
+                    <button
+                        onClick={() => handleZwischensumme()}
+                        className="btn"
+                    >
+                        Zwischensumme berechnen
+                    </button>
+                </div>
+
+                <h2>
+                    Werte der Münztafel entnehmen und in die Kästchen eintragen
+                </h2>
+                <hr />
+
                 <div className="container">
                     <h3 className="scheine">{initialCashSet[6].value}'er</h3>
                     <input
@@ -208,26 +228,6 @@ export default function App() {
                         = {count1 === '' ? 0 : eins / 100}€
                     </h3>
                 </div>
-
-                <h2>
-                    {zwischensumme === ''
-                        ? 'Zwischensumme = 0€'
-                        : 'Zwischensumme ' + zwischensumme + '€'}
-                </h2>
-
-                <div className="container">
-                    <button
-                        onClick={() => handleZwischensumme()}
-                        className="btn"
-                    >
-                        Zwischensumme berechnen
-                    </button>
-                </div>
-
-                <h2>
-                    Werte der Münztafel entnehmen und in die Kästchen eintragen
-                </h2>
-                <hr />
 
                 <div className="container">
                     <h3 className="scheine">{initialCashSet[8].value}'er</h3>
