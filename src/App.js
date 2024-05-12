@@ -201,7 +201,7 @@ export default function App() {
                 <h2>
                     {zwischensumme === ''
                         ? 'Zwischensumme = 0€'
-                        : zwischensumme + '€'}
+                        : 'Zwischensumme ' + zwischensumme + '€'}
                 </h2>
 
                 <div className="container">
