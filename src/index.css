@@ -44,10 +44,6 @@ footer {
   gap: 2rem;
 }
 
-input {
-  border-radius: 0.2rem;
-}
-
 .geld-in-der-kasse {
   display: flex;
   flex-direction: column;
@@ -66,8 +62,9 @@ input {
 }
 
 input {
+  border-radius: 0.2rem;
   text-align: center;
-  width: 3rem;
+  width: 5rem;
 }
 
 .scheine {
