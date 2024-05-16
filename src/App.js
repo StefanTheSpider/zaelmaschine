@@ -328,10 +328,18 @@ export default function App() {
 function Header({ children }) {
     return (
         <header>
-            <img
-                src="https://tix-and-travel.com/cdn/shop/files/tix_travel_86ff656c-742e-4b91-92ba-f838a467c241_130x@2x.png?v=1667990920"
-                alt="logo"
-            />
+            {monat !== 12 ? (
+                <img
+                    src="https://tix-and-travel.com/cdn/shop/files/tix_travel_86ff656c-742e-4b91-92ba-f838a467c241_130x@2x.png?v=1667990920"
+                    alt="logo"
+                />
+            ) : (
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0400/6602/3590/files/tix_travel_W_2022.png?v=1669624097"
+                    alt="winter-logo"
+                />
+            )}
+
             <div className="header">{children}</div>
         </header>
     );
@@ -340,10 +348,17 @@ function Footer() {
     return (
         <footer>
             <div>with ❤️‍🔥 by StefanTheSpider for</div>
-            <img
-                src="https://tix-and-travel.com/cdn/shop/files/tix_travel_86ff656c-742e-4b91-92ba-f838a467c241_130x@2x.png?v=1667990920"
-                alt="logo"
-            />
+            {monat !== 12 ? (
+                <img
+                    src="https://tix-and-travel.com/cdn/shop/files/tix_travel_86ff656c-742e-4b91-92ba-f838a467c241_130x@2x.png?v=1667990920"
+                    alt="logo"
+                />
+            ) : (
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0400/6602/3590/files/tix_travel_W_2022.png?v=1669624097"
+                    alt="winter-logo"
+                />
+            )}
         </footer>
     );
 }
